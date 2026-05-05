@@ -7,7 +7,7 @@ export default function Navbar() {
         <div className="flex items-center gap-4">
           <div className="w-12 h-12 flex items-center justify-center p-1">
             <img 
-              src="/logo.png.png" 
+              src={`${import.meta.env.BASE_URL}logo.png.png`} 
               alt="Saarang Logo" 
               className="w-full h-full object-contain filter dark:drop-shadow-[0_0_8px_rgba(157,78,221,0.5)]" 
               onError={(e) => {

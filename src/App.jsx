@@ -10,7 +10,7 @@ const mockArtists = [
     subTitle: 'EDM Nite',
     badges: ['Featured Artist', 'Electronic Pop'],
     bio: 'Known for his unique blend of Indian classical music and electronic dance beats, Ritviz has redefined the contemporary soundscape. His energetic performances and infectious melodies create an unforgettable live experience that bridges cultural divides.',
-    imageUrl: '/ritwiz.png',
+    imageUrl: `${import.meta.env.BASE_URL}ritwiz.png`,
   },
   {
     id: 2,
@@ -19,7 +19,7 @@ const mockArtists = [
     subTitle: 'Pop Nite',
     badges: ['Headliner', 'Carnatic Pop'],
     bio: 'A phenomenon in the world of South Indian film music, Sid Sriram stunningly blends traditional carnatic roots with modern RnB and pop. Prepare for an incredibly soul-stirring vocal performance!',
-    imageUrl: '/sis_sriram.png',
+    imageUrl: `${import.meta.env.BASE_URL}sis_sriram.png`,
   },
   {
     id: 3,
@@ -28,7 +28,7 @@ const mockArtists = [
     subTitle: 'Rock Nite',
     badges: ['Global Icon', 'Rockstar'],
     bio: 'One of the most sought-after music composers and playback singers in Indian cinema. Known for his viral hits and electrifying live performances, Anirudh brings an unmatched wave of energy and charisma to the stage!',
-    imageUrl: '/Anrudh.png',
+    imageUrl: `${import.meta.env.BASE_URL}Anrudh.png`,
   }
 ];
 
@@ -40,7 +40,7 @@ export default function App() {
         <img 
           alt="Epic music festival stage" 
           className="w-full h-full object-cover brightness-[0.6] contrast-[1.15]" 
-          src="/background.png" 
+          src={`${import.meta.env.BASE_URL}background.png`} 
         />
         <div className="absolute inset-0 bg-black/70"></div>
       </div>
